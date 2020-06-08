@@ -1,0 +1,139 @@
+.content{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #154341;
+    z-index: 1000;
+}
+.content .bg{
+    width: 100%;
+    height:auto;
+}
+.content .box{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box .imgArea{
+    width: 100%;
+    overflow: hidden;
+}
+.box .ask{
+    font-family: 'PingFang-Bold';
+    font-size: 18px;
+    color:#fff;
+    width: 272px;
+    margin-top: 10px;
+}
+.box .list{
+    width: 272px;
+    overflow: hidden;
+}
+.box .list .item{
+    height: 35px;
+    margin-top: 12px;
+    position: relative;
+}
+.box .list .item img{
+    height: 35px;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+.box .list .item span{
+    color: #fff;
+    font-size: 15px;
+    line-height: 35px;
+    font-family: 'PingFangSC-Regular';
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: 11px;
+}
+.box .list .item .ansbg1_1{
+    width: 191px;
+}
+.box .list .item .ansbg1_2{
+    width: 246px;
+}
+.box .list .item .ansbg1_3{
+    width: 191px;
+}
+.box .list .item .ansbg2_1{
+    width: 161px;
+}
+.box .list .item .ansbg2_2{
+    width: 218px;
+}
+.box .list .item .ansbg2_3{
+    width: 250px;
+}
+.box .list .item .ansbg3_1{
+    width: 217px;
+}
+.box .list .item .ansbg3_2{
+    width: 171px;
+}
+.box .list .item .ansbg3_3{
+    width: 191px;
+}
+.box .list .item .ansbg4_1{
+    width: 188px;
+}
+.box .list .item .ansbg4_2{
+    width: 185px;
+}
+.box .list .item .ansbg4_3{
+    width: 158px;
+}
+.box .btnGroup{
+    margin-top: 13px;
+    width: 299px;
+    display: flex;
+    justify-content: space-between;
+}
+.box .btnGroup .back{
+    width: 46px;
+    height: 39px;
+    margin-top: 5px;
+}
+.box .btnGroup .next{
+    width: 127px;
+    height: 46px;
+    position: relative;
+}
+.box .btnGroup .next img{
+    width: 127px;
+    height: 46px;
+    display: block;
+}
+.box .btnGroup .next span{
+    width: 127px;
+    height: 46px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    line-height: 46px;
+    text-align: center;
+    font-size: 19px;
+    color: #382A00;
+    font-family: 'PingFang-Medium'; 
+    font-weight: bold;
+}
+.gray{
+    filter: grayscale(100%);
+    filter: gray;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.3s ease-out;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}

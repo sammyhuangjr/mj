@@ -1,0 +1,48 @@
+/*
+	图片导入
+*/
+var images = {
+	user			:	require('@/assets/images/user.png'),
+	network			:	require('@/assets/images/network.png'),
+	props			:	require('@/assets/images/props.png'),
+	record			:	require('@/assets/images/record.png'),
+	setting			:	require('@/assets/images/setting.png'),
+	local			:	require('@/assets/images/local.png'),
+	back			:	require('@/assets/images/back.png'),
+	more			: 	require('@/assets/images/more.png'),
+	newuser			:	require('@/assets/images/newuser.png'),
+	search			:	require('@/assets/images/search.png'),
+	edit			:	require('@/assets/images/edit.png'),
+	delete			:	require('@/assets/images/delete.png'),
+	userEdit		:	require('@/assets/images/useredit.png'),
+	noPic			:	require('@/assets/images/noPic.png'),
+}
+export default{
+	install(Vue,options){
+        Vue.prototype.images = images;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
