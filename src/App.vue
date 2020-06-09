@@ -37,9 +37,7 @@
   padding: 0;
   list-style: none;
 }
-div{
-  font-size: 6px;
-}
+
 body{
   font-family: 'WRYH_UI';
 }

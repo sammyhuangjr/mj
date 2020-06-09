@@ -13,19 +13,19 @@
     <div class="line_4"></div>
     <div class="user_setting">
       <div class="tip">姓 名</div><span v-if="!isEdit" class="mark"> *</span>
-      <div class="user_Info">{{userInfo.name ? userInfo.name : '必填'}}</div>
+      <div class="user_Info" @click="_setting(1)">{{userInfo.name ? userInfo.name : '必填'}}</div>
     </div>
     <div class="user_setting">
       <div class="tip">手机号</div>
-      <div class="user_Info">{{userInfo.phone ? userInfo.phone : '选填'}}</div>
+      <div class="user_Info" @click="_setting(2)">{{userInfo.phone ? userInfo.phone : '选填'}}</div>
     </div>
     <div class="user_setting">
       <div class="tip">身份证</div>
-      <div class="user_Info">{{userInfo.idCard ? userInfo.idCard : '选填'}}</div>
+      <div class="user_Info" @click="_setting(3)">{{userInfo.idCard ? userInfo.idCard : '选填'}}</div>
     </div>
     <div class="user_setting">
       <div class="tip">卡 号</div>
-      <div class="user_Info">{{userInfo.cardNo ? userInfo.cardNo : '选填'}}</div>
+      <div class="user_Info" @click="_setting(4)">{{userInfo.cardNo ? userInfo.cardNo : '选填'}}</div>
     </div>
     <div class="user_setting">
       <div class="tip">权 限</div><span v-if="!isEdit" class="mark"> *</span>
@@ -69,7 +69,10 @@
     },
 
     methods:{
-     
+      //index 1姓名 2手机号 3身份证 4卡号 
+     _setting(index){
+       this.$router.push({path:'/update',query:{type:index,isEdit:this.isEdit}});
+     },
     },
 
     created(){
@@ -82,8 +85,9 @@
       this.isEdit = this.$route.query.isEdit;
       if(!this.isEdit){
         this.userInfo = {};
+      }else{
+        this.userInfo = this.$route.query.userInfo;
       }
-      console.log(this.isEdit)
     },
   }
 </script>
@@ -132,8 +136,8 @@
       background: #F2F2F2;
     }
     .user_setting{
-      width: 440px;
-      height: 28px;
+      width: 480px;
+      height: 50px;
       padding: 11px 20px;
       border-bottom: 1px solid #F2F2F2;
       .tip{

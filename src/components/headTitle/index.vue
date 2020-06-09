@@ -3,6 +3,7 @@
         <img :src="images.back" class="back" v-if="isBack" @click="naviBack"/>
         <div class="_title">{{title}}</div>
         <img :src="images.more" class="more" v-if="isMore"/>
+        <div class="subBtn" @click="onSubmit" v-if="isSub">保存</div>
     </div>
 </template>
 <script>
@@ -23,6 +24,10 @@
         isMore:{
           type:Boolean,
           value:false,
+        },
+        isSub:{
+          type:Boolean,
+          value:false,
         }
     },
 
@@ -40,6 +45,9 @@
         },
         showMore(){
           this.popupVisible = true;
+        },
+        onSubmit(){
+          this.$emit('onSubmit');
         }
     }
   }
@@ -56,6 +64,16 @@
           position: absolute;
           top: 30px;
           right: 20px;
+        }
+        .subBtn{
+          position: absolute;
+          top: 27px;
+          right: 20px;
+          font-size:20px;
+          font-family:PingFangSC-Regular,PingFang SC;
+          font-weight:400;
+          color:rgba(0,126,249,1);
+          line-height:28px;
         }
     }
     .border ._title{

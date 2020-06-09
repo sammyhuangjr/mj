@@ -4,7 +4,7 @@
     <div class="title">设 置</div>
     <div class="setting">
         <div class="_args" v-for="item in setting" :key="item.name">
-            <img class="icon" :src="item.icon" alt="" @click="_toNext">
+            <img class="icon" :src="item.icon" alt="" @click="_toNext(item)">
             <div class="name">{{item.name}}</div>
         </div>
         
@@ -18,8 +18,8 @@
     data(){
       return{
         setting:[
-            {'name':'用户管理','icon':this.images.user,'path':'/userSet'},
-            {'name':'网络配置','icon':this.images.network,},
+            {'name':'用户管理','icon':this.images.user,'path':'/user'},
+            {'name':'网络配置','icon':this.images.network,'path':'/network'},
             {'name':'参数配置','icon':this.images.props,},
             {'name':'识别记录','icon':this.images.record,},
             {'name':'系统设置','icon':this.images.setting,},
@@ -32,8 +32,8 @@
     },
 
     methods:{
-      _toNext(){
-          this.$router.push('/user');
+      _toNext(item){
+          this.$router.push(item.path);
       }
     },
 

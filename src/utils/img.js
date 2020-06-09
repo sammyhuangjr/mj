@@ -16,6 +16,8 @@ var images = {
 	delete			:	require('@/assets/images/delete.png'),
 	userEdit		:	require('@/assets/images/useredit.png'),
 	noPic			:	require('@/assets/images/noPic.png'),
+	yitai			:	require('@/assets/images/yitai.png'),
+	wifi			:	require('@/assets/images/wifi.png')
 }
 export default{
 	install(Vue,options){

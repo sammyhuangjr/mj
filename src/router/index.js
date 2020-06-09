@@ -5,6 +5,8 @@ const home                  =  ()=>import('@/pages/index/index')
 const setting               =  ()=>import('@/pages/setting/setting') 
 const userSet               =  ()=>import('@/pages/user/user')
 const userEdit              =  ()=>import('@/pages/user/editUser')
+const update                =  ()=>import('@/pages/user/update')
+const network               =  ()=>import('@/pages/network/network')
 Vue.use(Router)
 
 let routeConfigs = {
@@ -32,6 +34,18 @@ let routeConfigs = {
             path: '/userEdit',
             name: 'userEdit',
             component: userEdit,
+            meta: { type: 1 }
+        },
+        {
+            path: '/update',
+            name: 'update',
+            component: update,
+            meta: { type: 1 }
+        },
+        {
+            path: '/network',
+            name: 'network',
+            component: network,
             meta: { type: 1 }
         },
     ]

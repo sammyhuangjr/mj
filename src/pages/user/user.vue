@@ -13,11 +13,11 @@
     <span class="total">共{{total}}人</span>
     <van-pull-refresh v-model="refreshing" @refresh="onRefresh">
       <van-list class="userList" v-model="loading" :finished="finished"  @load="onLoad">
-        <div v-for="item in user" :key="item.name" class="_args" >
+        <div v-for="(item,index) in user" :key="item.name" class="_args" >
           <img class="FaceImg" :src="item.logo" />
           <div class="name">{{item.name}}</div>
           <img class="deleteIcon" :src="that.images.delete" />
-          <img class="editIcon" :src="that.images.edit" @click="userEdit"/>
+          <img class="editIcon" :src="that.images.edit" @click="userEdit(index)"/>
         </div>
       </van-list>
     </van-pull-refresh>
@@ -71,8 +71,8 @@
         this.finished = true
       },
       //TODO 编辑用户
-      userEdit(){
-        this.$router.push({path:'/userEdit',query:{isEdit:true}});
+      userEdit(index){
+        this.$router.push({path:'/userEdit',query:{isEdit:true,userInfo:this.user[index]}});
       },
       //新增用户
       newuser(){
@@ -86,7 +86,7 @@
       this.init();
     },
     mounted(){
-      // $('.searchInput').virtualkeyboard();
+      
     }
   }
 </script>
@@ -152,7 +152,7 @@
       display: flex;
       flex-direction: column;
       ._args{
-        width: 440px;
+        width: 480px;
         height: 83px;
         padding: 15px 20px;
         border-top: 1px solid #F2F2F2;
