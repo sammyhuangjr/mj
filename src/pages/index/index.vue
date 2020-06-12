@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="box">
     <headTitle isBack="true"></headTitle>
     <div class="title">登 录</div>
@@ -10,6 +11,8 @@
     </div>
     <!-- <keyboard @sendText="getText"></keyboard> -->
   </div>
+</div>
+  
 </template>
 <script>
 
@@ -54,9 +57,9 @@
   @import url('../../assets/css/virtualkeyboard.css');
   .box{
     height: 100%;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     max-width: 480px;
   }
   .box .title{

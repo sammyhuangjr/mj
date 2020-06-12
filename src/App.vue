@@ -48,7 +48,12 @@ img{
     公共样式
 */
 
-
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
 .app_left{
   float: left;
 }
@@ -255,6 +260,8 @@ img{
   height: 100%; 
   /*overflow: hidden;*/
   transition: all .3s ease;  
+  display: flex;
+  justify-content: center;
 }   
 
 .slide-left-enter,  .slide-right-leave-active {    

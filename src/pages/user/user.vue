@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="box">
     <headTitle title="用户管理" isBack="true" isMore="true"></headTitle>
     <div class="_head">
@@ -22,6 +23,8 @@
       </van-list>
     </van-pull-refresh>
   </div>
+</div>
+  
 </template>
 <script>
   import headTitle from '../../components/headTitle/index';
@@ -94,9 +97,9 @@
   @import url('../../assets/css/virtualkeyboard.css');
   .box{
     height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
     max-width: 480px;
     ._head{
       border-top: 1px solid #F2F2F2;

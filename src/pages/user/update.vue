@@ -1,9 +1,12 @@
 <template>
+<div>
   <div class="box">
     <headTitle :title="title" isBack="true" isSub="true" @onSubmit="onInfoSubmit"></headTitle>
     <div class="tips">{{this.tips}}</div>
     <input class="userInput" type="text" />
   </div>
+</div>
+  
 </template>
 <script>
 
@@ -82,9 +85,9 @@
   .box{
     background: #F7F7F7;
     height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
     max-width: 480px;
     .tips{
       margin-left: 20px;

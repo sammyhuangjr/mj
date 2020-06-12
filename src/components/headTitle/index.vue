@@ -54,8 +54,9 @@
 </script>
 <style lang="scss" scoped>
     .border{
-        width: 100%;
+        width: 480px;
         height: 80px;
+        position: relative;
         background: #FFFFFF;
         display: flex;
         justify-content: center;

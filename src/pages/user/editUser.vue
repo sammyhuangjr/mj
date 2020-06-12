@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="box">
     <headTitle title="用户管理" isBack="true"></headTitle>
     <div class="face">
@@ -39,6 +40,8 @@
       <div class="save">保 存</div>
     </div>
   </div>
+</div>
+  
 </template>
 <script>
 
@@ -94,9 +97,9 @@
 <style lang="scss" scoped>
   .box{
     height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
     max-width: 480px;
     .face{
         width: 480px;
