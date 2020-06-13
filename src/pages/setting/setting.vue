@@ -23,7 +23,7 @@
         setting:[
             {'name':'用户管理','icon':this.images.user,'path':'/user'},
             {'name':'网络配置','icon':this.images.network,'path':'/network'},
-            {'name':'参数配置','icon':this.images.props,},
+            {'name':'参数配置','icon':this.images.props,'path':'/propsList'},
             {'name':'识别记录','icon':this.images.record,},
             {'name':'系统设置','icon':this.images.setting,},
             {'name':'关于本机','icon':this.images.local,}

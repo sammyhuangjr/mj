@@ -25,7 +25,12 @@ var images = {
 	wifi3			:	require('@/assets/images/wifi3.png'),
 	yitaiInfo		:	require('@/assets/images/yitaiInfo.png'),
 	right			:	require('@/assets/images/right.png'),
-	check			:	require('@/assets/images/check.png')
+	check			:	require('@/assets/images/check.png'),
+	selected		:	require('@/assets/images/selected.png'),
+	minLight		:	require('@/assets/images/minLight.png'),
+	maxLight		:	require('@/assets/images/maxLight.png'),
+	minVolume		:	require('@/assets/images/minVolume.png'),
+	maxVolume		:	require('@/assets/images/maxVolume.png')
 }
 export default{
 	install(Vue,options){
